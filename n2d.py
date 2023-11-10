@@ -6,7 +6,7 @@ import matplotlib
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-plt.style.use(['seaborn-white', 'seaborn-paper'])
+plt.style.use(['seaborn-v0_8-white', 'seaborn-v0_8-paper'])
 sns.set_context("paper", font_scale=1.3)
 import pandas as pd
 import numpy as np
@@ -21,7 +21,7 @@ from sklearn import mixture
 from sklearn.cluster import KMeans, SpectralClustering
 from sklearn.manifold import Isomap
 from sklearn.manifold import LocallyLinearEmbedding
-from sklearn.utils.linear_assignment_ import linear_assignment
+from scipy.optimize import linear_sum_assignment
 from time import time
 
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
